@@ -22,7 +22,7 @@ namespace LoggingServer
                     var body = ea.Body;
                     
                     var message = Encoding.UTF8.GetString(body);
-                    logFile.WriteLine(message);
+                    logFile.Write(message);
                     logFile.FlushAsync();
                 };
                 channel.BasicConsume(queue: "Logs",
