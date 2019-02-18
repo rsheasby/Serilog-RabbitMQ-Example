@@ -19,3 +19,5 @@ Firstly, you'll need to install RabbitMQ server somewhere. To configure it, you 
 The simplest way to set up the exchange, queue, and binding is using the RabbitMQ management plugin as described [here](https://www.rabbitmq.com/management.html). The default username and password for RabbitMQ is `guest` and `guest`.
 
 Alternatively, you can use the [RabbitMQ Cli Tool](https://www.rabbitmq.com/management-cli.html) to do the exchange, queue, and binding creation. Note that you'll still have to enable the management interface plugin for this to work.
+
+Finally, simply run the respective projects using `dotnet run` within their project directories. All the logs from the example web application will automatically be routed through RabbitMQ. The log server will then receive the logs from RabbitMQ and write them to Webapp.log as JSON.
