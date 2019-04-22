@@ -23,4 +23,4 @@ Alternatively, you can use the [RabbitMQ Cli Tool](https://www.rabbitmq.com/mana
 Finally, simply run the respective projects using `dotnet run` within their project directories. All the logs from the example web application will automatically be routed through RabbitMQ. The log server will then receive the logs from RabbitMQ and write them to Webapp.log as JSON.
 
 ## What does the license mean?
-The Unlicense attached to this project means that you can use it in it's entirety for any reason whatsoever with no obligations. If you do reference large portions of the code or use it in it's entirret, then an attribution would be appreciated. That said, it's still not a legal obligation.
+The Unlicense attached to this project means that you can use it in it's entirety for any reason whatsoever with no obligations. If you do reference large portions of the code or use it in it's entirety, then an attribution would be appreciated. That said, it's still not a legal obligation.
